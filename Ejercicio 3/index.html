@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Presupuesto</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cálculo de Presupuesto</h1>
+        <label for="income">Ingresos:</label>
+        <input type="number" id="income" placeholder="Ingresa tus ingresos">
+        
+        <h2>Categorías</h2>
+        <div id="categories">
+            <div class="category">
+                <input type="text" value="Gastos" class="category-name">
+                <input type="number" value="50" class="category-percent">%
+            </div>
+            <div class="category">
+                <input type="text" value="Ahorro" class="category-name">
+                <input type="number" value="30" class="category-percent">%
+            </div>
+            <div class="category">
+                <input type="text" value="Inversión" class="category-name">
+                <input type="number" value="20" class="category-percent">%
+            </div>
+        </div>
+        <button onclick="addCategory()">Agregar Categoría</button>
+        <button onclick="calculateBudget()">Calcular Presupuesto</button>
+        
+        <h2>Resultados</h2>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

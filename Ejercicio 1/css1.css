@@ -1,0 +1,66 @@
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Mulish black', sans-serif;
+    font-weight: 900;
+    font-size: 28.11pt;
+    color: #04146c;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 55px;
+    margin-right: 15px;
+}
+
+.text {
+    width: 40%;
+    margin-left: 70px;
+}
+
+h2 {
+    font-family: 'Mulish bold', sans-serif;
+    font-weight: 700;
+    font-size: 16.17pt;
+    color: #0a2ff1;
+}
+
+p {
+    font-family: 'Mulish regular', sans-serif;
+    font-weight: 400;
+    font-size: 14.98pt;
+    color: #04146c;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+    .text {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .icon {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
